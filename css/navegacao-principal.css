@@ -1,0 +1,28 @@
+.cabecalho-pagina-inicial{
+    background-color: #EF4036;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.caixa-logo{
+    display: flex;
+    align-items: center;
+}
+
+.rodape-pagina-inicial{
+    background-color: cyan;
+}
+
+.img-logo{
+    width: 50px;
+    margin-right: 5px;
+}
+
+.titulo-logo{
+    font-family: 'Pacifico', cursive;
+    color: #FFCB01;
+    text-shadow: 4px 3px 0px #41589D;
+}
+
