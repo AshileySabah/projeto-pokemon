@@ -11,10 +11,6 @@
     align-items: center;
 }
 
-.rodape-pagina-inicial{
-    background-color: cyan;
-}
-
 .img-logo{
     width: 50px;
     margin-right: 5px;
@@ -23,6 +19,11 @@
 .titulo-logo{
     font-family: 'Pacifico', cursive;
     color: #FFCB01;
-    text-shadow: 4px 3px 0px #41589D;
+    text-shadow: 4px 3px 0px #3D58A5;
 }
 
+.rodape-pagina-inicial{
+    background-color: #3D58A5;
+    color: #ffffff;
+    text-align: center;
+}
