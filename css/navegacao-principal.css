@@ -4,6 +4,7 @@
 
 .menu-principal .container-fluid{
     justify-content: unset;
+    width: 90%;
 }
 
 .img-logo{
@@ -26,10 +27,11 @@
     }
 }
 
-@media(max-width: 300px){
+@media(max-width: 330px){
     .menu-principal .container-fluid{
         display: block;
         text-align: center;
+        width: 100%;
     }
 
     .img-logo{
