@@ -1,5 +1,6 @@
 .menu-principal{
-    background-color: #EF4036;
+    background-color: #FFCB01;
+    padding: 10px 0;
 }
 
 .menu-principal .container-fluid{
@@ -9,25 +10,39 @@
 
 .img-logo{
     width: 50px;
+    margin-right: 10px;
+}
+
+.img-logo:hover{
+    transform: rotate(360deg);
+    transition: .6s;
 }
 
 .titulo-logo{
-    font-family: 'Share Tech Mono', monospace;
-    color: #FFCB01;
-    text-shadow: 4px 3px 0px #3d58a5;
+    font-family: 'Rampart One', cursive;
+    color: #3d58a5;
     font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 0;
     cursor: default;
 }
 
-@media(max-width: 430px){
+@media(max-width: 550px){
     .titulo-logo {
         font-size: 2em;
     }
 }
 
-@media(max-width: 330px){
+@media(max-width: 400px){
+    .menu-principal{
+        background-color: #EF4036;
+    }
+
+    .titulo-logo{
+        color: #FFCB01;
+        font-family: 'Share Tech Mono', monospace;
+    }
+
     .menu-principal .container-fluid{
         display: block;
         text-align: center;
@@ -36,6 +51,7 @@
 
     .img-logo{
         width: 40px;
+        margin: 0;
     }
 
     .titulo-logo {
