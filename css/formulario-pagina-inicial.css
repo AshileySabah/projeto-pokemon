@@ -1,9 +1,24 @@
 .mensagem-apresentacao{
     margin: 0;
+    color: white;
+    font-size: 2em;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .conteudo-pagina-inicial .card{
     margin: 20px auto;
+}
+
+.conteudo-pagina-inicial .card-header{
+    background-color: #58585A;
+}
+
+.conteudo-pagina-inicial .card-body{
+    background-color: #EF4036;
+}
+
+.formulario-apresentacao{
+    margin: 0;
 }
 
 .caixa-btn-ir{
@@ -17,7 +32,41 @@
 }
 
 .img-btn-ir{
-    width: 80px;
+    width: 90px;
+    transition: .5s;
+}
+
+.img-btn-ir:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width: 400px){
+    .conteudo-pagina-inicial .card-body{
+        background-color: #FFCB01;
+    }
+
+    .borda-destaque{
+        border: 1px solid #58585A;
+    }
+
+    .mensagem-apresentacao{
+        font-size: 1.5em;
+    }
+
+    .formulario-apresentacao .input-group{
+        margin: 20px 0;
+    }
+
+    .btn-ir{
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width: 700px){
+    .img-btn-ir{
+        width: 80px;
+    }
 }
 
 @media(min-width: 400px){
