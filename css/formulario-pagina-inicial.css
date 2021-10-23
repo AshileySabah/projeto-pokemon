@@ -1,0 +1,55 @@
+.main-pagina-inicial{
+    height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-apresentacao{
+    width: 30%;
+}
+
+.caixa-mensagem-apresentacao{
+    border: 1px solid gray;
+    background-color: rgb(223, 223, 223);
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+.mensagem-apresentacao{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.caixa-entradas{
+    background-color: #58585A;
+    padding: 20px;
+}
+
+.input-texto{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    outline: none;
+    font-family: inherit;
+}
+
+.caixa-btn{
+    background-color: #58585A;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.btn-go{
+    background-color: inherit;
+    border: none;
+}
+
+.img-btn-go:hover{
+    transform: scale(1.2);
+}
+
+.img-btn-go{
+    width: 100px;
+    transition: .5s;
+}

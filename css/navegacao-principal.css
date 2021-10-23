@@ -18,13 +18,14 @@
 
 .img-logo:hover{
     transform: rotate(360deg);
-    transition: transform .6s;
+    transition: .6s;
 }
 
 .titulo-logo{
-    font-family: 'Pacifico', cursive;
+    font-family: 'Share Tech Mono', monospace;
     color: #FFCB01;
     text-shadow: 4px 3px 0px #3D58A5;
+    font-size: 2.1em;
 }
 
 .rodape-pagina-inicial{
