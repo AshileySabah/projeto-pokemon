@@ -4,11 +4,18 @@ textoParagrafoCopyright = `ThePokeWorld &copy; ${anoAtual}`;
 paragrafoCopyright.innerHTML = textoParagrafoCopyright;
 
 paragrafoDesenvolvidoPor = document.querySelector('[data-desenvolvido-por]');
-paragrafoDesenvolvidoPor.innerHTML = '';
-textoDesenvolvidoPor = 'Desenvolvido por Ashiley!';
-arrayTextoDesenvolvidoPor = textoDesenvolvidoPor.split('');
-arrayTextoDesenvolvidoPor.forEach((cadaLetra, posicao) => {
-    setTimeout(() => {
-        paragrafoDesenvolvidoPor.innerHTML += cadaLetra;
-    }, 100*posicao);
-})
+textoDesenvolvidoPor1 = 'Desenvolvido por Ash?';
+textoDesenvolvidoPor2 = 'Desenvolvido por Ashiley!';
+
+efeitoEscrever = (elemento, texto) => {
+    elemento.textContent = '';
+    arrayTexto = texto.split('');
+    arrayTexto.forEach((cadaLetra, posicao) => {
+        setTimeout(() => {
+            elemento.innerHTML += cadaLetra;
+        }, 100*posicao);
+    })
+}
+
+efeitoEscrever(paragrafoDesenvolvidoPor, textoDesenvolvidoPor1);
+// efeitoEscrever(paragrafoDesenvolvidoPor, textoDesenvolvidoPor2);
