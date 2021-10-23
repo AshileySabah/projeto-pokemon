@@ -16,6 +16,11 @@
     margin-right: 5px;
 }
 
+.img-logo:hover{
+    transform: rotate(360deg);
+    transition: transform .6s;
+}
+
 .titulo-logo{
     font-family: 'Pacifico', cursive;
     color: #FFCB01;
