@@ -4,8 +4,7 @@ textoParagrafoCopyright = `ThePokeWorld &copy; ${anoAtual}`;
 paragrafoCopyright.innerHTML = textoParagrafoCopyright;
 
 paragrafoDesenvolvidoPor = document.querySelector('[data-desenvolvido-por]');
-textoDesenvolvidoPor1 = 'Desenvolvido por Ash?';
-textoDesenvolvidoPor2 = 'Desenvolvido por Ashiley!';
+textoDesenvolvidoPor1 = 'Desenvolvido por Ashiley';
 
 efeitoEscrever = (elemento, texto) => {
     elemento.textContent = '';
@@ -18,4 +17,3 @@ efeitoEscrever = (elemento, texto) => {
 }
 
 efeitoEscrever(paragrafoDesenvolvidoPor, textoDesenvolvidoPor1);
-// efeitoEscrever(paragrafoDesenvolvidoPor, textoDesenvolvidoPor2);
