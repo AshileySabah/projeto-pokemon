@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <!-- Customizacao -->
         <link rel="stylesheet" href="css/navegacao-inicial.css">
+        <link rel="stylesheet" href="css/navegacao-principal.css">
         <link rel="stylesheet" href="css/main-home.css">
         <link rel="stylesheet" href="css/rodape-inicial.css">
         <!-- Google Fonts -->
@@ -16,14 +17,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rampart+One&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/082fb10a36.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="menu-principal">
-            <nav class="navbar">
-                <div class="container-fluid">
+            <nav class="container-menu">
+                <div class="caixa-logo">
                     <img src="img/pokebola.png" alt="Logo de Pokebola" class="img-logo">
                     <h1 class="titulo-logo">ThePokeWorld</h1>
                 </div>
+                <ul class="lista-navegacao-principal">
+                    <li class="item-navegacao-principal"><a href="#" class="link-navegacao-principal">Conheça as personagens</a></li>
+                    <li class="item-navegacao-principal"><a href="#" class="link-navegacao-principal">Jogo de Advinhação</a></li>
+                </ul>
             </nav>
         </header>
         <main class="conteudo-home">
@@ -33,7 +40,7 @@
                     <p>Seja muito bem vindo(a) ao ThePokeWorld!</p>
                     <hr>
                     <p class="mb-0">
-                        Voce pode começar com <a href="#">Conheça as personagens</a> ou <a href="#">Jogo de Advinhação</a>.
+                        Voce pode começar com <a href="#" class="link-navegacao-principal">Conheça as personagens</a> ou <a href="#" class="link-navegacao-principal">Jogo de Advinhação</a>.
                     </p>
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

@@ -1,0 +1,30 @@
+.titulo-logo a,
+.titulo-logo a:hover,
+.titulo-logo a:visited,
+.titulo-logo a:active{
+    text-decoration: none;
+    color: #3d58a5;
+}
+
+.lista-navegacao-principal{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.item-navegacao-principal{
+    margin-left: 10px;
+}
+
+.link-navegacao-principal,
+.link-navegacao-principal:hover{
+    text-decoration: none;
+}
+
+.link-navegacao-principal{
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
