@@ -25,6 +25,52 @@
 .link-navegacao-principal{
     background-color: #ffffff;
     color: black;
+    display: block;
     padding: 10px 15px;
     border-radius: 20px;
+}
+
+/*menu responsivo*/
+.botao-menu{
+    background-color: transparent;
+    border: unset;
+    font-size: 1.5em;
+    display: none;
+}
+
+@media(max-width: 1000px){
+    .botao-menu{
+        display: block;
+    }
+
+    .lista-navegacao-principal{
+        display: block;
+        position: absolute;
+        background-color: #FFCB01;
+        width: 100%;
+        top: 86;
+        left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        z-index: 5;
+    }
+
+    .item-navegacao-principal{
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+
+    .item-navegacao-principal:first-child{
+        margin-top: 10px;
+    }
+
+    .link-navegacao-principal{
+        background-color: transparent;
+        color: black;
+        padding: 2px;
+        display: inline-block;
+    }
+
+    .visibilidade-padrao{
+        display: none;
+    }
 }

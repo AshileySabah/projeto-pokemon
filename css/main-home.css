@@ -1,5 +1,12 @@
+body.home{
+    background-color: #D1F1FF;
+}
+
 .conteudo-home{
     height: calc(100vh - 156px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .caixa-alert{
@@ -10,4 +17,22 @@
 
 .conteudo-alert{
     width: 98%;
+}
+
+.secao-cards-pokemon{
+    background-color: #000000;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.conhecer{
+    background-color: red;
+    width: 40%;
+}
+
+.jogar{
+    background-color: pink;
+    width: 40%;
 }

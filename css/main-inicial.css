@@ -1,3 +1,7 @@
+body.inicial{
+    background-color: #A4F995;
+}
+
 .mensagem-apresentacao{
     margin: 0;
     color: white;
@@ -5,7 +9,6 @@
 }
 
 .conteudo-pagina-inicial{
-    background-color: #A4F995;
     height: calc(100vh - 156px);
     display: flex;
     align-items: center;
