@@ -21,7 +21,6 @@ botaoApresentacao.addEventListener('click', function(evento){
     const status = validarNomeApresentacao(nomeUsuario);
 
     if(status){
-        // console.log('Muito bem '+nomeUsuario.toUpperCase()+', bem vindo(a) ao ThePokeWorld!');
         window.location.href = '/home.html';
     }
 });

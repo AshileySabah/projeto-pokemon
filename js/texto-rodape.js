@@ -1,14 +1,14 @@
-paragrafoCopyright = document.querySelector('[data-rodape-copyright]');
-anoAtual = new Date().getFullYear();
-textoParagrafoCopyright = `ThePokeWorld &copy; ${anoAtual}`;
+const paragrafoCopyright = document.querySelector('[data-rodape-copyright]');
+const anoAtual = new Date().getFullYear();
+const textoParagrafoCopyright = `ThePokeWorld &copy; ${anoAtual}`;
 paragrafoCopyright.innerHTML = textoParagrafoCopyright;
 
-paragrafoDesenvolvidoPor = document.querySelector('[data-desenvolvido-por]');
-textoDesenvolvidoPor1 = 'Desenvolvido por Ashiley';
+const paragrafoDesenvolvidoPor = document.querySelector('[data-desenvolvido-por]');
+const textoDesenvolvidoPor1 = 'Desenvolvido por Ashiley';
 
 efeitoEscrever = (elemento, texto) => {
     elemento.textContent = '';
-    arrayTexto = texto.split('');
+    const arrayTexto = texto.split('');
     arrayTexto.forEach((cadaLetra, posicao) => {
         setTimeout(() => {
             elemento.innerHTML += cadaLetra;
