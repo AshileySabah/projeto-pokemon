@@ -33,13 +33,13 @@
                     <p class="mensagem-apresentacao">Primeiro de tudo, me diga o seu nome</p>
                 </div>
                 <div class="card-body">
-                  <form action="post" class="formulario-apresentacao">
+                  <form action="get" class="formulario-apresentacao">
                     <div class="input-group mb-3">
                         <span class="input-group-text borda-destaque" id="basic-addon1">@</span>
-                        <input type="text" class="form-control borda-destaque" placeholder="Digite seu nome ou apelido aqui" required>
+                        <input type="text" class="form-control borda-destaque input-apresentacao" placeholder="Digite seu nome ou apelido aqui" name="usuario" id="usuario" required>
                     </div>
                     <div class="caixa-btn-ir">
-                        <button class="btn-ir">
+                        <button class="btn-ir" type="submit">
                             <img src="img/botao-go.png" alt="Botao ir" class="img-btn-ir">
                         </button>
                     </div>
