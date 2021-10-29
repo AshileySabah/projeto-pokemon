@@ -5,8 +5,15 @@
     font-family: 'Share Tech Mono', monospace;
 }
 
+.conteudo-pagina-inicial{
+    height: calc(100vh - 156px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .conteudo-pagina-inicial .card{
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .conteudo-pagina-inicial .card-header{

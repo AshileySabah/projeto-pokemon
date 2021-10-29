@@ -1,0 +1,12 @@
+.rodape-inicial{
+    background-color: #3D58A5;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    height: 70px;
+    font-size: 1.05em;
+}
+
+.rodape-inicial p{
+    margin-bottom: 0;
+}
