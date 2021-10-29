@@ -1,0 +1,13 @@
+.conteudo-home{
+    height: calc(100vh - 156px);
+}
+
+.caixa-alert{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.conteudo-alert{
+    width: 98%;
+}

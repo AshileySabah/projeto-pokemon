@@ -8,9 +8,9 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <!-- Customizacao -->
-        <link rel="stylesheet" href="css/navegacao-principal.css">
-        <link rel="stylesheet" href="css/formulario-pagina-inicial.css">
-        <link rel="stylesheet" href="css/rodape-pagina-inicial.css">
+        <link rel="stylesheet" href="css/navegacao-inicial.css">
+        <link rel="stylesheet" href="css/main-home.css">
+        <link rel="stylesheet" href="css/rodape-inicial.css">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,14 +27,23 @@
             </nav>
         </header>
         <main class="conteudo-home">
-            conteúdo
+            <div class="alert alert-success caixa-alert" role="alert">
+                <div class="conteudo-alert">
+                    <h4 class="alert-heading">Muito bem, Usuario!</h4>
+                    <p>Seja muito bem vindo(a) ao ThePokeWorld!</p>
+                    <hr>
+                    <p class="mb-0">
+                        Voce pode começar com <a href="#">Conheça as personagens</a> ou <a href="#">Jogo de Advinhação</a>.
+                    </p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
         </main>
         <footer class="rodape-inicial">
             <p data-rodape-copyright></p>
             <p data-desenvolvido-por></p>
         </footer>
         <script src="js/texto-rodape.js"></script>
-        <script src="js/validar-apresentacao.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
