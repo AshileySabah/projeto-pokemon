@@ -1,34 +1,21 @@
-const numeroAleatorio = () => {
-    const numero = (Math.floor(Math.random()*10))+1;
+const numeroAleatorio = (min, max) => {
+    const numero = Math.floor(Math.random() * (max - min) + min);
     return numero;
 }
 
-const validarStatusRequisicao = response => {
-    if(!response.ok){
-        throw new Error('Status errado'+response.status);
-    }
-    return response.json();
-}
-
-const montarCardsRequisicao = (numPokemon) => {
-    console.log(numPokemon);
-    const imgTeste = document.querySelector('[data-card-img1]');
-    imgTeste.setAttribute('src', `https://cdn.traction.one/pokedex/pokemon/${numPokemon}.png`)
-}
-
-const tratarErroRequisicao = () => {
-    console.log('Falha ao consultar API');
-}
-
 const requisicaoCards = () => {
-    const numPokemon = numeroAleatorio();
-    // console.log(numPokemon)
-    const url = `https://pokeapi.co/api/v2/pokemon/${numPokemon}`;
+    for(let i = 1; i <= 2; i++){
+        if(i == 1){
+            var imgTeste = document.querySelector('[data-card-img1]');
+        }else{
+            var imgTeste = document.querySelector('[data-card-img2]');
+        }
 
-    fetch(url)
-    .then(validarStatusRequisicao)
-    .then(montarCardsRequisicao(numPokemon))
-    .catch(tratarErroRequisicao)
+        const numPokemon = numeroAleatorio(1, 20);
+        const url = `https://pokeapi.co/api/v2/pokemon/${numPokemon}`;
+
+        imgTeste.setAttribute('src', `https://cdn.traction.one/pokedex/pokemon/${numPokemon}.png`)
+    }
 }
 
 requisicaoCards();
