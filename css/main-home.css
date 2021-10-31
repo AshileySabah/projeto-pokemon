@@ -20,7 +20,7 @@ body.home{
 }
 
 .secao-cards-pokemon{
-    background-color: #000000;
+    /* background-color: #000000; */
     margin: 20px;
     display: flex;
     justify-content: space-around;
@@ -35,13 +35,13 @@ body.home{
     align-items: center;
 }
 
-.conhecer{
+/* .conhecer{
     background-color: red;
 }
 
 .jogar{
     background-color: pink;
-}
+} */
 
 .card-jogo{
     background-color: sienna;
@@ -89,3 +89,54 @@ body.home{
     margin: 0;
 }
 
+@media(max-width: 830px){
+    .conteudo-home{
+        height: auto;
+        display: block;
+    }
+
+    .card-jogo:hover{
+        margin: 0;
+        transform: scale(1.1);
+    }
+
+    .secao-cards-pokemon {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        margin: 0;
+        height: auto;
+    }
+
+    .card-jogo{
+        width: 250px;
+        height: 400px;
+    }
+
+    .conhecer{
+        padding-top: 40px;
+    }
+
+    .conhecer,
+    .jogar{
+        padding-bottom: 40px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    .img-card{
+        width: 60%;
+    }
+
+    .card-jogo{
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 350px){
+    .card-jogo {
+        width: 100%;
+    }
+}
