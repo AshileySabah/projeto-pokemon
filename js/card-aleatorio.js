@@ -12,7 +12,6 @@ const requisicaoCards = () => {
         }
 
         const numPokemon = numeroAleatorio(1, 20);
-        const url = `https://pokeapi.co/api/v2/pokemon/${numPokemon}`;
 
         caixaAlert.innerHTML = `
             <img src="https://cdn.traction.one/pokedex/pokemon/${numPokemon}.png" alt="Card de Pokemon" class="img-card">
