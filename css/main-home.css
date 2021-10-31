@@ -24,15 +24,68 @@ body.home{
     margin: 20px;
     display: flex;
     justify-content: space-around;
-    height: 50vh;
+    height: 55vh;
+}
+
+.conhecer,
+.jogar{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .conhecer{
     background-color: red;
-    width: 40%;
 }
 
 .jogar{
     background-color: pink;
-    width: 40%;
 }
+
+.card-jogo{
+    background-color: sienna;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 300px;
+    height: 450px;
+    border: 1px solid gray;
+    box-shadow: 5px 6px 7px 7px rgba(0,0,0,0.82), inset 4px 4px 15px 0px #53300e;
+    transition: 0.2s;
+}
+
+.card-jogo:hover{
+    margin-bottom: 20px;
+}
+
+.caixa-imagem-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-card, .link-card:hover{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.img-card{
+    width: 100%;
+    padding: 20px 10px 0 10px;
+}
+
+.caixa-texto{
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding: 15px;
+}
+
+.caixa-texto p{
+    font-size: 1.1em;
+    text-align: justify;
+    margin: 0;
+}
+

@@ -3,31 +3,32 @@ const numeroAleatorio = () => {
     return numero;
 }
 
-const num1 = numeroAleatorio();
-const num2 = numeroAleatorio();
-
-console.log(num1);
-console.log(num2);
-
-function requisicao(numPokemon){
-    const url = `https://pokeapi.co/api/v2/pokemon/${numPokemon}`;
-    const options = {
-        method: 'GET',
-        headers: {
-            'content-type': 'application/json;charset=utf-8'
-        }
+const validarStatusRequisicao = response => {
+    if(!response.ok){
+        throw new Error('Status errado'+response.status);
     }
-
-    if(true){
-        fetch(url, options).then(
-            response => response.json()
-        ).then(
-            data => {
-                console.log(data);
-            }
-        )
-    }
+    return response.json();
 }
 
-requisicao(num1);
-requisicao(num2);
+const montarCardsRequisicao = (numPokemon) => {
+    console.log(numPokemon);
+    const imgTeste = document.querySelector('[data-card-img1]');
+    imgTeste.setAttribute('src', `https://cdn.traction.one/pokedex/pokemon/${numPokemon}.png`)
+}
+
+const tratarErroRequisicao = () => {
+    console.log('Falha ao consultar API');
+}
+
+const requisicaoCards = () => {
+    const numPokemon = numeroAleatorio();
+    // console.log(numPokemon)
+    const url = `https://pokeapi.co/api/v2/pokemon/${numPokemon}`;
+
+    fetch(url)
+    .then(validarStatusRequisicao)
+    .then(montarCardsRequisicao(numPokemon))
+    .catch(tratarErroRequisicao)
+}
+
+requisicaoCards();
