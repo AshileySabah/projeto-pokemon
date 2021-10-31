@@ -1,0 +1,23 @@
+body.erro-login{
+    background-color: antiquewhite;
+}
+
+.conteudo-pagina-erro-login{
+    height: calc(100vh - 156px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-redirecionar{
+    background-color: #ffffff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.caixa-redirecionar .mensagem-erro{
+    margin: 0;
+}

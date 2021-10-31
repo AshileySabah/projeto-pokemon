@@ -9,6 +9,7 @@ const validarNomeApresentacao = (nome) => {
     }else if(nome.length == 1){
         paragrafoValidacao.textContent = '*Vamos lá, esse não é seu nome.\nPreciso de pelo menos 2 letras!';
     }else{
+        sessionStorage.setItem('nomeUsuario', nome);
         return true;
     }
 }
