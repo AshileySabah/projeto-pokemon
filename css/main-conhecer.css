@@ -44,6 +44,10 @@ body.conhecer{
     justify-content: center;
 }
 
+.link-ativo-paginacao{
+    background-color: darkblue;
+}
+
 @media(max-width: 1160px){
     .conteudo-conhecer{
         height: 100vh;

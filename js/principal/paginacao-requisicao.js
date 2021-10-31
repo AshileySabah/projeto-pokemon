@@ -1,6 +1,4 @@
 const montarCardsConhecer = (objeto, num, elemento) => {
-    console.log(num);
-    console.log(objeto);
 
     const nome = objeto.forms[0].name;
     const tipo = objeto.types[0].type.name;
@@ -49,4 +47,26 @@ const requisicaoCards = (paginacao) => {
     }
 }
 
-requisicaoCards(2);
+requisicaoCards(1);
+
+const mudarClassePaginacao = (event) => {
+    const itensPaginacao = document.querySelectorAll('.page-item');
+    for(let i = 0; i < itensPaginacao.length; i++){
+        const cadaItem = itensPaginacao[i];
+
+        cadaItem.classList.remove('active')
+    }
+
+    const itemPrincipal = event.target.parentNode;
+    itemPrincipal.classList.add('active');
+
+    const paginacaoEscolhida = event.target.textContent;
+    requisicaoCards(paginacaoEscolhida);
+}
+
+const itensPaginacao = document.querySelectorAll('.page-item');
+for(let i = 0; i < itensPaginacao.length; i++){
+    const cadaItem = itensPaginacao[i];
+
+    cadaItem.addEventListener('click', mudarClassePaginacao);
+}
