@@ -79,3 +79,15 @@ body.conhecer .link-conhecer{
         margin: 20px;
     }
 }
+
+@media(min-width: 581px) and (max-height: 790px){
+    body.conhecer{
+        background-color: red;
+    }
+
+    .conteudo-conhecer{
+        display: block;
+        height: auto;
+    }
+
+}
