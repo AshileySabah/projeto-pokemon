@@ -140,8 +140,3 @@ body.home{
         width: 100%;
     }
 }
-@media(min-height: 681px){
-    body.home{
-        background-color: red;
-    }
-}
