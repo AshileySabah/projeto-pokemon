@@ -7,7 +7,6 @@ body.conhecer .link-conhecer{
 }
 
 .conteudo-conhecer{
-    height: calc(100vh - 156px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,5 +91,19 @@ body.conhecer .link-conhecer{
     .conteudo-conhecer{
         height: 100%;
         display: flex;
+    }
+}
+
+
+@media(min-width: 1160px) and (min-height: 791px){
+    .conteudo-conhecer{
+        height: calc(100vh - 203px);
+    }
+}
+
+@media(max-height: 480px) and (min-width: 1160px){
+    .conteudo-conhecer{
+        flex-direction: row;
+        height: auto;
     }
 }
