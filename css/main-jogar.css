@@ -14,6 +14,18 @@ body.jogar .link-sorteio{
     align-items: center;
 }
 
+.container-jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao-cards-conhecer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .area-card{
     background-color: #000000;
     border: 20px outset rgb(192, 190, 190);
@@ -43,4 +55,108 @@ body.jogar .link-sorteio{
     border: 8px solid rgb(11, 156, 11);
     border-radius: 50px;
     outline: 3px solid rgb(14, 179, 14);
+    margin-bottom: 20px;
+}
+
+.caixa-mensagem-status{
+    margin-bottom: 20px;
+    font-size: 4em;
+    font-weight: 100;
+}
+
+@media(max-width: 1000px),(max-height: 750px){
+    .caixa-cards-jogar{
+        width: 600px;
+    }
+
+    .area-card{
+        width: 200px;
+        height: 200px;
+    }
+
+    .caixa-mensagem-status{
+        font-size: 3.2em;
+    }
+}
+
+@media(max-width: 700px),(max-height: 600px){
+    .caixa-cards-jogar{
+        width: 400px;
+    }
+
+    .area-card{
+        width: 133.33px;
+        height: 133.33px;
+        border-width: 10px;
+    }
+
+    .caixa-mensagem-status{
+        font-size: 2em;
+    }
+
+    .btn-jogar{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(max-width: 500px){
+    .caixa-cards-jogar{
+        width: 280px;
+    }
+
+    .area-card{
+        width: 93.33px;
+        height: 93.33px;
+        border-width: 10px;
+    }
+
+    .caixa-mensagem-status{
+        font-size: 1.7em;
+    }
+}
+
+@media(max-width: 400px),(max-height: 500px){
+    .caixa-cards-jogar{
+        width: auto;
+        flex-direction: column;
+    }
+
+    .area-card{
+        width: 100%;
+        height: 120px;
+        border-width: 10px;
+        text-align: center;
+    }
+
+    .caixa-mensagem-status{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .conteudo-jogar{
+        display: block;
+        height: auto;
+    }
+
+    .container-jogo{
+        display: block;
+    }
+
+    .img-card-jogar{
+        width: auto;
+        height: 100px;
+    }
+
+    .btn-jogar{
+        width: 100%;
+        height: 70px;
+    }
+}
+
+@media(max-width: 400px) and (min-height: 725px){
+    .conteudo-jogar{
+        height: 100%;
+        display: flex;
+    }
 }
