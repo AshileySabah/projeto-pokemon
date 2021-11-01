@@ -136,3 +136,37 @@ body.inicial{
         width: 40%;
     }
 }
+
+
+@media(max-height: 530px){
+    body.inicial{
+        background-color: red;
+    }
+
+    .conteudo-pagina-inicial{
+        height: auto;
+        display: block;
+    }
+
+    .conteudo-pagina-inicial .card{
+        display: block;
+        position: initial;
+    }
+
+    .conteudo-pagina-inicial .card-header{
+        height: 233px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .conteudo-pagina-inicial .card-body{
+        height: 130px;
+    }
+}
+
+@media(max-height: 530px) and (min-width: 775px){
+    .conteudo-pagina-inicial .card-header{
+        align-items: center;
+    }
+}
