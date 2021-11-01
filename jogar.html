@@ -10,6 +10,7 @@
         <!-- Customizacao -->
         <link rel="stylesheet" href="css/navegacao-inicial.css">
         <link rel="stylesheet" href="css/navegacao-principal.css">
+        <link rel="stylesheet" href="css/main-jogar.css">
         <link rel="stylesheet" href="css/rodape-inicial.css">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,19 +28,24 @@
                     <h1 class="titulo-logo"><a href="home.html">ThePokeWorld</a></h1>
                 </div>
                 <ul class="lista-navegacao-principal visibilidade-padrao">
-                    <li class="item-navegacao-principal"><a href="conhecer.html" class="link-navegacao-principal">Conheça as personagens</a></li>
-                    <li class="item-navegacao-principal"><a href="jogar.html" class="link-navegacao-principal">Jogo de Advinhação</a></li>
+                    <li class="item-navegacao-principal"><a href="conhecer.html" class="link-navegacao-principal link-conhecer">Conheça as personagens</a></li>
+                    <li class="item-navegacao-principal"><a href="jogar.html" class="link-navegacao-principal link-sorteio">Jogo de Sorteio</a></li>
                 </ul>
                 <button class="botao-menu"><i class="fas fa-bars"></i></button>
             </nav>
         </header>
         <main class="conteudo-jogar">
-            
+            <div class="caixa-mensagem-status display-2 mb-4" data-mensagem>Boa sorte!</div>
+            <div class="caixa-cards-jogar" data-caixa-jogar></div>
+            <div class="caixa-botao-ir">
+                <button class="btn-jogar" data-button-jogar>Aperte</button>
+            </div>
         </main>
         <footer class="rodape-inicial">
             <p data-rodape-copyright></p>
             <p data-desenvolvido-por></p>
         </footer>
+        <script src="js/principal/jogo-sorteio.js"></script>
         <script src="js/validar-erro-login-geral.js"></script>
         <script src="js/botao-menu-responsivo.js"></script>
         <script src="js/texto-rodape.js"></script>
