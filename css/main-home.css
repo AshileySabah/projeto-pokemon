@@ -89,7 +89,7 @@ body.home{
     margin: 0;
 }
 
-@media(max-width: 830px){
+@media(max-width: 830px),(max-height: 680px){
     .conteudo-home{
         height: auto;
         display: block;
@@ -138,5 +138,10 @@ body.home{
 @media(max-width: 350px){
     .card-jogo {
         width: 100%;
+    }
+}
+@media(min-height: 681px){
+    body.home{
+        background-color: red;
     }
 }
