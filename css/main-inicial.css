@@ -139,10 +139,6 @@ body.inicial{
 
 
 @media(max-height: 530px){
-    body.inicial{
-        background-color: red;
-    }
-
     .conteudo-pagina-inicial{
         height: auto;
         display: block;
